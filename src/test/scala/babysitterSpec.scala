@@ -5,13 +5,9 @@ import com.github.nscala_time.time.Imports._
 class BabysitterSpec extends FlatSpec {
 
   "A Babysitter" should "be paid $12 per hour from start time to bedtime" in {
-    val babysitterCalculator = new Calculator
+    val babysitterCalculator = Calculator
+    val start = DateTime.now.hour(18)
+    val end = DateTime.now.hour(19)
+    val charge = babysitterCalculator(start, end)
   }
-
-  // it should "throw NoSuchElementException if an empty stack is popped" in {
-  //   val emptyStack = new Stack[String]
-  //   intercept[NoSuchElementException] {
-  //     emptyStack.pop()
-  //   }
-  // }
 }
