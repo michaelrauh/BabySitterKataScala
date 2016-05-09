@@ -30,4 +30,11 @@ class BabysitterSpec extends FlatSpec {
     val end = 3
     assert (babysitterCalculator(start, end) == 32)
   }
+
+  it should "be paid $104 for the nine hours from 6 to 3" in {
+    val babysitterCalculator = Calculator
+    val start = 18
+    val end = 3
+    assert (babysitterCalculator(start, end) == 104)
+  }
 }
