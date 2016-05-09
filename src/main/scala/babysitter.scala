@@ -18,13 +18,6 @@ object Calculator{
   def apply (start:Int, end:Int) : Int = {
     if (start < 17 || end > 28) {return 0}
     val rateForHour = beforeBed orElse bedToMidnight orElse afterMidnight
-
-    val all_hours = start until end
-
-    val all_rates = all_hours.map(x => rateForHour(x))
-    println(all_hours)
-    println(all_rates)
-
-    return all_rates.sum
+    return (start until end).map(x => rateForHour(x)).sum
   }
 }
