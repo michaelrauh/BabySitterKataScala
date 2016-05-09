@@ -44,4 +44,11 @@ class BabysitterSpec extends FlatSpec {
     val end = 18
     assert (babysitterCalculator(start, end) == 0)
   }
+
+  it should "refuse to work after 4 and return 0" in {
+    val babysitterCalculator = Calculator
+    val start = 29
+    val end = 31
+    assert (babysitterCalculator(start, end) == 0)
+  }
 }
