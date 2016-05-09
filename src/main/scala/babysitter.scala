@@ -16,6 +16,7 @@ object Calculator{
   }
 
   def apply (start:Int, end:Int) : Int = {
+    if (start < 17) {return 0}
     val rateForHour = beforeBed orElse bedToMidnight orElse afterMidnight
 
     val all_hours = start until end
