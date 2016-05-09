@@ -32,4 +32,7 @@ class BabysitterSpec extends FlatSpec with Matchers {
   it should "refuse to work after 4 and return 0" in {
     babysitterCalculator(29, 31, 22) shouldBe 0
   }
+
+  it should "accept a bedtime of 9 and charge $20 to work 8 to 10"
+    babysitterCalculator(20, 22, 21)
 }
