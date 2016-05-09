@@ -1,16 +1,13 @@
 import babysitter.Calculator
 import org.scalatest._
+import com.github.nscala_time.time.Imports._
 
 class BabysitterSpec extends FlatSpec {
-  //
-  // "A Stack" should "pop values in last-in-first-out order" in {
-  //   val stack = new Stack[Int]
-  //   stack.push(1)
-  //   stack.push(2)
-  //   assert(stack.pop() === 2)
-  //   assert(stack.pop() === 1)
-  // }
-  //
+
+  "A Babysitter" should "be paid $12 per hour from start time to bedtime" in {
+    val babysitterCalculator = new Calculator
+  }
+
   // it should "throw NoSuchElementException if an empty stack is popped" in {
   //   val emptyStack = new Stack[String]
   //   intercept[NoSuchElementException] {
