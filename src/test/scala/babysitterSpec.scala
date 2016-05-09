@@ -9,5 +9,6 @@ class BabysitterSpec extends FlatSpec {
     val start = DateTime.now.hour(18)
     val end = DateTime.now.hour(19)
     val charge = babysitterCalculator(start, end)
+    charge should be 12
   }
 }
